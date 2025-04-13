@@ -1,0 +1,223 @@
+/* Стиль для всего окна */
+body {
+  margin: 0;
+  font-family: TT Lakes;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: rgba(27, 28, 33, 1);
+  background-color: rgba(248, 248, 248, 1);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-weight: 400;
+  color: rgba(126, 126, 130, 1);
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  border-top: 1px solid rgba(217, 255, 245, 1);
+  background: linear-gradient(to right, #f8f8f8 0%, #ffffff 98.61%);
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+
+.custom-container {
+  width: 100%; 
+  height: 100%; 
+}
+.swiper-slide .custom-container .swiper-slide-item {
+  box-sizing: border-box ;
+  width: 240px;
+  height: 72px;
+  border: 1px solid rgba(234, 234, 234, 1);
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 1);
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.5s;
+  margin: 0;
+}
+.swiper-slide-item:hover  {
+  transform: scale(1.1);
+}
+
+
+.swiper-slide-item-img {
+  box-sizing:border-box;
+  border: 2px solid rgba(255, 62, 121, 1);
+  border-radius: 50%;
+  padding: 14px 15.5px 14px 17px ;
+
+  transition: transform 0.5s;
+}
+.swiper-slide-item-img:hover {
+  transform: scale(1.1);
+}
+
+
+.swiper-pagination {
+  margin-top: 16px;
+  height: 12px;
+  position: relative !important;
+}
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  margin-left: 6px !important;
+  margin-right: 6px !important;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  opacity: 1;
+  background: rgba(221, 221, 221, 1) !important;
+  transform: scale(1);
+  
+}
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: rgba(181, 182, 188, 1) !important;
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+
+.page__button {
+  border: none;
+  background-color: rgba(248, 248, 248, 1);
+  display: flex;
+  align-items: center;
+}
+
+.page__button {
+  margin-top: 24px;
+  margin-left: 24px;
+  padding: 0;
+}
+
+
+
+@media (max-width: 767px) {
+  body {
+      width: 320px;
+  }
+  .page {
+    position: relative;
+  }
+
+  .slider-1 {
+    margin-left: 16px !important;
+    margin-top: 16px !important;
+  }
+
+  .swiper::before {
+    position: absolute;
+    z-index: 2;
+    content: " ";
+    width: 24px;
+    height: 81px;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    left: 280.3px;
+  }
+
+  .page__menu-title_style_320px {
+    padding: 16px;
+  }
+
+  .swiper-slide-item:hover {
+    transform: scale(1.1);
+  }
+
+  .swiper-slide-item-img:hover {
+    transform: scale(1.1);
+  }
+
+  .page__button-hidden {
+    display: none;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+
+  body {
+    width: 768px;
+}
+
+  .slider-1 .grid {
+    box-sizing: border-box;
+    display: grid;
+    row-gap: 16px;
+    column-gap: 16px;
+    grid-template-columns: repeat(3, 224px);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 24px;
+    margin-left: 24px;
+  }
+
+  .swiper-slide {
+    width: 224px !important;
+  }
+
+  .swiper-slide  .custom-container .swiper-slide-item-768px {
+    width: 224px;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  .page__menu-title_style_768px {
+    padding-left: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .wie__open {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1120px) {
+  body {
+    width: 1120px;
+  }
+  .slider-1 .grid {
+    box-sizing: border-box;
+    display: grid;
+    row-gap: 16px;
+    column-gap: 32px;
+    grid-template-columns: repeat(4, 240px);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 24px;
+    margin-left: 32px;
+    margin-right: 33px;
+  }
+
+  .swiper-slide {
+    width: 240px !important;
+  }
+
+  .swiper-slide  .custom-container .swiper-slide-item-768px {
+    width: 240px;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  .page__menu-title_style_1120px {
+    padding-left: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .wie__open_1120px {
+    display: none !important;
+  }
+}
