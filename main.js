@@ -49,23 +49,8 @@ let wie = document.querySelectorAll('.wie');
 let wie_1120px = document.querySelectorAll('.wie_1120px');
 
 
-// buttonShow.addEventListener('click', function(evt) {
-//   evt.preventDefault();
-//   wie.forEach(item => item.classList.remove('wie__open'));
-//   buttonShow.classList.toggle('wie__open');
-//   buttonHide.classList.toggle('wie__open');
-//   });
-  
-// buttonHide.addEventListener('click', function() {
-//   wie.forEach(item => item.classList.add('wie__open'));
-//   buttonShow.classList.toggle('wie__open');
-//   buttonHide.classList.toggle('wie__open');
-//   });
-
-
   function checkScreenSize() {
     if (window.innerWidth <= 1120) {
-        // Выполняйте действия, если ширина экрана меньше или равна 1120px
         buttonShow.addEventListener('click', function(evt) {
             evt.preventDefault();
             wie.forEach(item => item.classList.remove('wie__open'));
@@ -81,7 +66,6 @@ let wie_1120px = document.querySelectorAll('.wie_1120px');
     } 
     if (window.innerWidth >= 1120) {
       let wie = document.querySelectorAll('.wie_1120px');
-      // Выполняйте действия, если ширина экрана меньше или равна 1120px
       buttonShow.addEventListener('click', function(evt) {
           evt.preventDefault();
           wie.forEach(item => item.classList.remove('wie__open_1120px'));
